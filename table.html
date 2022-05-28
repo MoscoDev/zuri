@@ -1,0 +1,251 @@
+<!-- Tribute Page
+
+A tribute page is an overview of someone whom you admire in life. Let us create an HTML page for that legend.
+
+ 
+
+Below are the requirements for the task:
+
+Include a title or heading on the tribute page. (e.g. "Dr.  Chris Ngige").
+Add a description for the tribute. E.g “Great Indian scientist and politician who played a leading role in the development of India’s missile and nuclear weapons programs”.
+Add an Image and image caption tag (for your image element add the following attribute style=”height:200px, width:”200px” to prevent overflow). 
+You should include a timeline( notable things) of the life of the tribute in the form of a list.
+You should have at least ten list items.
+Include a link that will lead to any biography of the tribute.
+Ensure the following tags are in your work (small,figcaption, strong, blockquotes, figure)  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr.  Chris Ngige</title>
+  <style>
+    
+body {
+  margin: 10px 5%;
+  background-color: #000000;
+  border: 0;
+  padding: 0;
+  font-family: arial, san-serif;
+  color: #737373;
+  vertical-align: baseline;
+}
+
+ a:link, a:visited {
+  color: #808080;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+ a:hover, a:active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+div.btn-group a:link, a:visited {
+  color: #808080;
+  text-decoration: none;
+  border: solid 1px;
+}
+
+div.btn-group a:hover, a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.btn-default:link, a.btn-default:visited {
+	color: #808080;
+	text-decoration: none;
+  	border: solid 1px;
+}
+
+a.btn-default:hover, a.btn-default:active {
+  	text-decoration: none;
+    color: #ffffff;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+.row{
+  padding: 40px;
+}
+
+
+li {
+padding-left: 20px; 
+padding-bottom: 30px;
+}
+
+hr {
+  background-color: #333333; 
+}
+
+blockquote {
+	padding-top: 25px;
+}
+
+#section1 {
+padding: 30px 0px 70px;
+}
+
+#section2 {
+background-color: #1a1a1a;
+padding: 150px 50px;
+letter-spacing: 0.5em;
+}
+
+#section3 {
+  padding-top: 150px;
+}
+
+#section4 {
+  background-color: inherit;
+  font-size: 10px;
+  color: #808080;  
+}
+
+#section5 {
+   border-top: 10px solid #1a1a1a;  
+}
+
+.source {
+ font-size: -1em;
+}
+
+.author {
+ font-size: -1em; 
+ float: right;
+ letter-spacing: 0.2em; 
+ vertical-align: super;
+ padding-right: 50px;
+}
+
+#footer {
+  padding: 40px 20px ;
+  color: #808080;
+  font-size: 10px;
+  text-align: center;
+  border-top: 10px solid #1a1a1a;  
+}
+  </style>
+</head>
+<body>
+  <div>
+ 
+ <!-- Header Section -->
+  <div id="">    
+    <div>
+        <h1>Albert Einstein</h1>
+        <strong>><small>Physicist. Scientist. Genius. (1879–1955)</small></strong<br>
+    </div>
+    <div>  <br>
+    		<div class="btn-group" role="group" >
+  				<a href="#target">Synopsis</a>
+			  	<a href="#section3">Timeline</a>
+			</div>		
+    </div>
+  </div>
+
+ <!-- Intro Section  -->   
+ <div id="section1"> 
+    <div> 
+      <figure style="margin: 0 auto;">
+ 		<img src="https://static.dw.com/image/45897958_6.jpg" alt="Picture of Albert Einstein" class="img-responsive" width="200" height="200">
+     <figcaption>Albert Einstein</figcaption>
+      </figure>     
+ 	
+		<div class="container" id="target">
+				<br>
+				<H2>Synopsis</H2>
+				<br>
+				<blockquote cite="https://www.biography.com/people/albert-einstein-9285408" class="blockquote">
+				Born in Ulm, Württemberg, Germany in 1879, Albert Einstein had a passion for inquiry that eventually led him to develop the special and general theories of relativity. In 1921, he won the Nobel Prize for physics for his explanation of the photoelectric effect and immigrated to the U.S. in the following decade after being targeted by the Nazis. Einstein is generally considered the most influential physicist of the 20th century, with his work also having a major impact on the development of atomic energy. With a focus on unified field theory during his later years, Einstein died on April 18, 1955, in Princeton, New Jersey.
+				
+				<footer><em>- From  <a href="https://www.biography.com/people/albert-einstein-9285408" target="_blank">Biography.com</a></em>
+				</footer>
+				</blockquote>
+		</div>
+	</div>
+ </div>     
+  
+<!-- Quote Section -->      
+  <div id="section2" >
+  	<div>
+  		<h2> Everybody is genius. But if you judge a fish by its ability to climb a tree, 
+  		it will live its whole life believing that it is stupid." </h2>
+  		<p><span class="author">- Einstein</span></p>
+  	</div>
+  </div>
+
+<!-- Synopsis & Timeline Section -->     
+  <div id="section3">  	
+     <div>
+		 <h2>Timeline of Einstein's Life</h2><br><br>
+		  <ul>
+			<li><b>1879</b><br> Born to Hermann Einstein (a featherbed salesman) and his wife Pauline in Ulm, Germany.</li>        
+			<li><b>1884</b><br>Receives his first compass around this time, inspiring a lifelong quest to investigate mysteries of the natural world.</li>        
+			<li><b>1889</b><br>Settles into a program of self-education at age 10 and begins reading as much about science as he can.</li>        
+			<li><b>1894</b><br>Stays on in Munich to finish the school year after his parents move to Pavia, Italy. Lasts only one term on his own and then follows his family to Italy.</li>        
+			<li><b>1895</b><br>Attempts to skip high school by taking an entrance exam to the Swiss Polytechnic, a top technical university, but fails the arts portion. His family sends him to the Swiss town of Aarau to finish high school.</li>        
+			<li><b>1896</b><br>Graduates from high school at age 17 and enrolls at the ETH (the Federal Polytechnic School) in Zurich.</li>        
+			<li><b>1898</b><br>Falls in love with Mileva Maric, a Serbian classmate at the ETH.</li>        
+			<li><b>1900</b><br>Graduates from the ETH.</li>        
+			<li><b>1901</b><br>Becomes a Swiss citizen and, unemployed, searches for work. Meets Maric in northern Italy for a tryst, and she becomes pregnant. In the fall, he finds work in Schaffhausen, Switzerland as a tutor. Maric, visibly pregnant, moves to Stein am Rhein, three miles upriver. She then returns to her parents' home to give birth to her child. Einstein moves to Bern.</li>        
+			<li><b>1902</b><br>In January, Maric gives birth to their daughter, Lieserl, whom they eventually put up for adoption. Lieserl reportedly becomes ill, and then all record of her disappears. Einstein takes a job at the Swiss Patent Office. Hermann Einstein becomes ill and dies.</li>        
+			<li><b>1903</b><br>Marries Maric in January.</li>        
+			<li><b>1904</b><br>Maric gives birth to their first son, Hans Albert.</li>        
+			<li><b>1905</b><br>Publishes, at age 26, five groundbreaking papers, making this his "annus mirabilis," or miracle year. One of the papers introduces his special theory of relativity and another E = mc2.</li>        
+			<li><b>1906</b><br>Continues working as an examiner at the Swiss Patent Office in Bern.</li>
+			<li><b>1907</b><br>Begins applying the laws of gravity to his special theory of relativity.</li>
+			<li><b>1910</b><br>Son Eduard is born.</li>
+			<li><b>1911</b><br>Moves with his family to Prague, where he is given a full professorship at the German University there. Attends the invitation-only Solvay Conference in Brussels, the first world physics conference; he is the youngest physicist there.</li>
+			<li><b>1912</b><br>Moves with his family to Zurich, where he becomes a professor of theoretical physics at the ETH.</li>
+			<li><b>1913</b><br>Works on his new theory of gravity.</li>
+			<li><b>1914</b><br>Becomes director of the Kaiser Wilhelm Institute in Berlin and professor of theoretical physics at the University of Berlin. Maric and the children move there in April, but they return to Zurich after three months. Divorce proceedings begin. In August, World War I begins.</li>
+			<li><b>1915</b><br>Completes the general theory of relativity.</li>
+			<li><b>1917</b><br>Collapses from exhaustion and falls seriously ill. Nursed back to health by his cousin Elsa L&#246;wenthal. Publishes his first paper on cosmology. </li>
+			<li><b>1919</b><br>Marries L&#246;wenthal. On May 29, a solar eclipse provides proof of the general theory of relativity.</li>
+			<li><b>1922</b><br>Awarded the Nobel Prize in Physics for 1921.</li>
+			<li><b>1927</b><br>Attends fifth Solvay Conference and begins developing the foundation of quantum mechanics with Niels Bohr.</li>
+			<li><b>1928</b><br>Begins pursuing his idea of a unified field theory.</li>
+			<li><b>1932</b><br>As a Jew, begins to feel the heat of Nazi Germany. Now, at 53, at the height of his fame.</li>
+			<li><b>1933</b><br>Sets sail with L&#246;wenthal for the United States. Settles with her in Princeton, New Jersey, where he assumes a post at the Institute for Advanced Study.</li>
+			<li><b>1936</b><br>L&#246;wenthal dies after a brief illness.</li>
+			<li><b>1939</b><br>Writes a famous letter to President Franklin Roosevelt not long after the start of World War II that warns of the possibility of Germany's building an atomic bomb and urges nuclear research.</li>
+			<li><b>1940</b><br>Becomes an American citizen (retains his Swiss citizenship).</li>
+			<li><b>1949</b><br>Ex-wife Maric dies.</li>
+			<li><b>1955</b><br>Dies of heart failure on April 18. </li>
+		  </ul>
+    </div>
+ </div>
+
+<!-- Biography Section -->
+	<div id="section5">
+		<div>
+			<h3>If you have time, read more about Albert Einstein, the Genius.</h3>
+			<p></p>
+		</div>
+		
+		<div>
+				<a href="https://www.biography.com/people/albert-einstein-9285408" target="_blank" class="btn btn-lg btn-default">
+				Biography
+				</a>
+  		</div>
+ 	</div>
+ 	
+ 	
+ 
+
+<!-- Footer Section -->
+    <div id="footer">
+      <p>Zuri Internship Task<a href="https://codepen.io/moscodev/pen/QWQaozp" target="_blank"> done by Moses</a></p>
+    </div>
+
+
+</div>  
+</body>
+</html>
